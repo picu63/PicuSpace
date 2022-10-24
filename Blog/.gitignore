@@ -115,4 +115,4 @@ build
 .strapi-updater.json
 
 # exclude development configs
-config/development
+config/env/development
