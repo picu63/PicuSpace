@@ -1,0 +1,14 @@
+﻿@page "/my-blog"
+@inject HttpClient HttpClient
+@inject IConfiguration Configuration
+<h3>Blog</h3>
+<p class="link-info" href="https://strapi.io/blog/how-to-build-a-blog-using-blazor-wasm-and-strapi">Inspired by this site</p>
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var appSettings = Configuration.GetChildren();
+        var strapiApiUri = new Uri("https://strapi.io/blog");
+        var response = await HttpClient.GetFromJsonAsync<string>(new Uri(strapiApiUri, "posts"));
+        Console.WriteLine(response);
+    }
+}

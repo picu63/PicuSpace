@@ -8,9 +8,10 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-builder.Services.AddSingleton(sp =>
+builder.Services.AddSingleton<AppSettings>(sp =>
 {
-    return sp.GetRequiredService<IConfiguration>().GetValue<AppSettings>(nameof(AppSettings));
+    var configurationSection = builder.Configuration.GetSection(nameof(AppSettings));
+    return new AppSettings();
 });
 builder.Services.AddMudServices();
 await builder.Build().RunAsync();
