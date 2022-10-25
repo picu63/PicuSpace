@@ -17,3 +17,4 @@ module.exports = ({ env }) => ({
     debug: false,
   },
 });
+console.log('Using ', config.host , 'database connection')
