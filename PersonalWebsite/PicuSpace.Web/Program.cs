@@ -7,8 +7,9 @@ var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-builder.Services.AddSingleton<AppSettings>(sp =>
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new(builder.HostEnvironment.BaseAddress) });
+builder.Services.AddHttpClient(Consts.BlogApiHttpClientName, client => client.BaseAddress = new("https://picu-blog-api.herokuapp.com/api/"));
+builder.Services.AddSingleton(sp =>
 {
     var configurationSection = builder.Configuration.GetSection(nameof(AppSettings));
     return new AppSettings();
