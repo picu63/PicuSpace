@@ -2,16 +2,25 @@
 @using System.Net.Http.Headers
 @using PicuSpace.Web.Services.Blog
 @inject IHttpClientFactory ClientFactory
-@inject IConfiguration Configuration
+@inject NavigationManager NavigationManager
 <h3>Blog</h3>
+@foreach (var header in _headers)
+{
+    <MudCard Outlined="true" @onclick='() => NavigationManager.NavigateTo("my-blog/" + header.Slug)'>
+        <MudText>@header.Title</MudText>
+        <MudText>@header.Description</MudText>
+    </MudCard>
+}
 <p class="link-info" href="https://strapi.io/blog/how-to-build-a-blog-using-blazor-wasm-and-strapi">Inspired by this site</p>
 @code {
+    private readonly List<ArticleHeader> _headers = new();
+
     protected override async Task OnInitializedAsync()
     {
         var blogClient = ClientFactory.CreateClient(Consts.BlogApiHttpClientName);
         var articlesResponse = await blogClient.GetStringAsync("articles");
         var blogService = new BlogService(ClientFactory);
-        var headers = blogService.GetArticleHeaders();
+        _headers.AddRange(await blogService.GetArticleHeaders());
         Console.WriteLine(articlesResponse);
     }
 }
