@@ -1,0 +1,27 @@
+{
+    "folders": [
+        {
+            "name": "Portfolio website",
+            "path": "portfolio"
+        },
+        {
+            "name": "Blog backend",
+            "path": "Blog"
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/node_modules": true
+        },
+        "search.exclude": {
+            "**/node_modules": true
+        },
+        "editor.formatOnSave": true,
+        "prettier.singleQuote": true,
+        "prettier.tabWidth": 4,
+        "prettier.jsxSingleQuote": true,
+        "[yaml]": {
+            "editor.formatOnSave": false
+        }
+    }
+}
