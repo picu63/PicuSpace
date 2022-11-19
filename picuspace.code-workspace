@@ -19,9 +19,6 @@
         "editor.formatOnSave": true,
         "prettier.singleQuote": true,
         "prettier.tabWidth": 4,
-        "prettier.jsxSingleQuote": true,
-        "[yaml]": {
-            "editor.formatOnSave": false
-        }
+        "prettier.jsxSingleQuote": true
     }
 }
