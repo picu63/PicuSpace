@@ -20,5 +20,8 @@
         "prettier.singleQuote": true,
         "prettier.tabWidth": 4,
         "prettier.jsxSingleQuote": true
+    },
+    "extensions": {
+        "recommendations": ["esbenp.prettier-vscode"]
     }
 }
