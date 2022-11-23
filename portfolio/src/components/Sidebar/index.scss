@@ -88,7 +88,11 @@ nav {
       content: 'contact';
     }
   }
-
+  a.linkedin-link {
+    &:after {
+      content: 'linkedin';
+    }
+  }
   a.active {
     svg {
       color: #ffd700;
