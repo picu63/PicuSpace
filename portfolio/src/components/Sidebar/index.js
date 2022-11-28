@@ -7,7 +7,11 @@ import {
   UilUser,
   UilEnvelope,
   UilLinkedin,
+  UilFacebook,
+  UilGithub,
 } from '@iconscout/react-unicons'
+
+const navItemHoverColor = '#4d4d4e'
 
 const Sidebar = () => {
   return (
@@ -18,7 +22,7 @@ const Sidebar = () => {
       </Link>
       <nav>
         <NavLink exact="true" activeclassname="active" to="/">
-          <UilHome color="#4d4d4e" />
+          <UilHome color={navItemHoverColor} />
         </NavLink>
         <NavLink
           exact="true"
@@ -26,7 +30,7 @@ const Sidebar = () => {
           className="about-link"
           to="/about"
         >
-          <UilUser color="#4d4d4e" />
+          <UilUser color={navItemHoverColor} />
         </NavLink>
         <NavLink
           exact="true"
@@ -34,16 +38,38 @@ const Sidebar = () => {
           className="contact-link"
           to="/contact"
         >
-          <UilEnvelope color="#4d4d4e" />
+          <UilEnvelope color={navItemHoverColor} />
         </NavLink>
-        <a
-          className="linkedin-link"
-          href="https://www.linkedin.com/in/piotrolearczyk/"
-          target="_blank"
-        >
-          <UilLinkedin color="#4d4d4e" />
-        </a>
       </nav>
+      <ul>
+        <li>
+          <a
+            className="linkedin-link"
+            href="https://www.linkedin.com/in/piotrolearczyk/"
+            target="_blank"
+          >
+            <UilLinkedin color={navItemHoverColor} />
+          </a>
+        </li>
+        <li>
+          <a
+            className="facebook-link"
+            href="https://www.facebook.com/piotrpicu"
+            target="_blank"
+          >
+            <UilFacebook color={navItemHoverColor} />
+          </a>
+        </li>
+        <li>
+          <a
+            className="github-link"
+            href="https://github.com/picu63"
+            target="_blank"
+          >
+            <UilGithub color={navItemHoverColor} />
+          </a>
+        </li>
+      </ul>
     </div>
   )
 }
