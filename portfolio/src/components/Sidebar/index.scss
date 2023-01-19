@@ -88,6 +88,11 @@ nav {
       content: 'contact';
     }
   }
+  a.blog-link {
+    &::after {
+      content: 'blog';
+    }
+  }
   a.linkedin-link {
     &:after {
       content: 'linkedin';
@@ -119,9 +124,11 @@ ul {
       svg {
         width: 20px;
         height: 20px;
-      }
-      &:hover svg {
-        fill: #ffd700;
+        transition: fill 0.3s ease-out;
+
+        &:hover {
+          fill: #ffd700;
+        }
       }
     }
   }

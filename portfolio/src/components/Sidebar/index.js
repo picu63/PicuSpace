@@ -9,6 +9,7 @@ import {
   UilLinkedin,
   UilFacebook,
   UilGithub,
+  UilBloggerAlt,
 } from '@iconscout/react-unicons'
 
 const navItemHoverColor = '#4d4d4e'
@@ -31,6 +32,14 @@ const Sidebar = () => {
           to="/about"
         >
           <UilUser color={navItemHoverColor} />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="blog-link"
+          to="/blog"
+        >
+          <UilBloggerAlt color={navItemHoverColor} />
         </NavLink>
         <NavLink
           exact="true"
