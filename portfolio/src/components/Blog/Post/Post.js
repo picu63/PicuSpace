@@ -1,22 +1,21 @@
-import { useState, useEffect } from "react"
-import Markdown from "markdown-to-jsx"
-import Code from "./Code"
+import { useState, useEffect } from 'react'
+import Markdown from 'markdown-to-jsx'
+import Code from '../Code/Code'
 
-import cover from '../assets/img/cover.jpeg'
-import '../styles/Post.css'
+// import cover from '../assets/img/cover.jpeg'
+import './Post.css'
 
 const Post = () => {
   const [postContent, setPostcontent] = useState('')
   const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
-    import('../tutorials/tutorial1.md')
-      .then(res =>
-        fetch(res.default)
-          .then(response => response.text())
-          .then(response => setPostcontent(response))
-          .catch(err => console.log(err))
-      )
+    import('./GettingStarted.md').then((res) =>
+      fetch(res.default)
+        .then((response) => response.text())
+        .then((response) => setPostcontent(response))
+        .catch((err) => console.log(err))
+    )
   }, [])
 
   return (
@@ -24,10 +23,7 @@ const Post = () => {
       <article>
         <header>
           <div className="article__cover">
-            <img
-              src={cover}
-              alt="my-cover"
-            />
+            {/* <img src={cover} alt="my-cover" /> */}
           </div>
         </header>
         <main>
@@ -38,10 +34,10 @@ const Post = () => {
                   component: Code,
                   props: {
                     isDark,
-                    setIsDark
-                  }
-                }
-              }
+                    setIsDark,
+                  },
+                },
+              },
             }}
           >
             {postContent}
