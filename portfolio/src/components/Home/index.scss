@@ -14,7 +14,7 @@
     font-family: 'Coolvetica';
 
     &:before {
-      content: '<h1>';
+      //   content: '<h1>';
       font-family: 'La Belle Aurore';
       color: #ffd700;
       font-size: 18px;
@@ -24,7 +24,7 @@
       opacity: 0.6;
     }
     &:before {
-      content: '<h1/>';
+      //   content: '<h1/>';
       font-family: 'La Belle Aurore';
       color: #ffd700;
       font-size: 18px;
@@ -36,7 +36,9 @@
     }
 
     img {
-      width: 32px;
+      width: 52px;
+      position: relative;
+      top: 9px;
     }
   }
 }
