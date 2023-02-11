@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
-import Markdown from 'markdown-to-jsx'
-import Code from '../Code/Code'
+import './index.css'
+import ReactMarkdown from 'react-markdown'
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
+import python from 'react-syntax-highlighter/dist/esm/languages/prism/python'
 
-// import cover from '../assets/img/cover.jpeg'
-import './Post.css'
+SyntaxHighlighter.registerLanguage('python', python)
 
 const Post = () => {
   const [postContent, setPostcontent] = useState('')
@@ -18,6 +19,8 @@ const Post = () => {
     )
   }, [])
 
+  const MarkdownComponents = {}
+
   return (
     <div className="article-wrapper">
       <article>
@@ -27,21 +30,9 @@ const Post = () => {
           </div>
         </header>
         <main>
-          <Markdown
-            options={{
-              overrides: {
-                Code: {
-                  component: Code,
-                  props: {
-                    isDark,
-                    setIsDark,
-                  },
-                },
-              },
-            }}
-          >
+          <ReactMarkdown components={MarkdownComponents}>
             {postContent}
-          </Markdown>
+          </ReactMarkdown>
         </main>
       </article>
     </div>

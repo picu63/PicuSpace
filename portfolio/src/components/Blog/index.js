@@ -1,6 +1,11 @@
-import Post from './Post/Post'
+import Post from './Post'
 import './index.scss'
-
+import python from 'react-syntax-highlighter/dist/cjs/languages/prism/python'
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
+const content = `\`\`\`python 
+console.log("hello"); 
+\`\`\``
+SyntaxHighlighter.registerLanguage('python', python)
 const Blog = () => {
   return (
     <>
@@ -13,6 +18,7 @@ const Blog = () => {
       </header>
       <main className="main">
         <Post />
+        {/* <ReactMarkdown>```js console.log("hello"); ```</ReactMarkdown> */}
       </main>
     </>
   )
