@@ -7,11 +7,10 @@ const Home = () => {
   return (
     <div className="container home-page">
       <div className="text-zone">
-        <img src={PersonalImage} alt="man in black" width="400px" />
+        <img className="personal-image" src={PersonalImage} alt="man in black" width="400px" />
         <h1>
-          Hi, <br /> I'm Piotr Olearczyk aka PI
-          <img src={LogoTitle} alt="developer" />
-          &nbsp; software developer
+          Hi, <br /> I'm Piotr Olearczyk aka <div className="display-inline"><span className="emphasized">PI</span>
+          <img src={LogoTitle} alt="developer" /></div> software developer
         </h1>
         <h2>.NET Developer .......</h2>
         <Link to="/contact" className="flat-button">

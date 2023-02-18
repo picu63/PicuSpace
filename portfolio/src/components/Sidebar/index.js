@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
-import LogoS from '../../assets/images/logo-s.png'
+import LogoS from '../../assets/images/logo-picu-transparent.svg'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import {
   UilHome,
