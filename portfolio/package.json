@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://picu63.github.io/PicuSpace",
+  "homepage": "https://picu.pl",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
