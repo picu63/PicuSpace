@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d74bbb6.css",
-    "main.js": "/static/js/main.b3ead0a0.js",
-    "static/js/376.307698b6.chunk.js": "/static/js/376.307698b6.chunk.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/personal-image-ai-drawing.png": "/static/media/personal-image-ai-drawing.51b17a4076924f4ca52b.png",
-    "static/media/helvetica-neu.ttf": "/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/logo_sub.png": "/static/media/logo_sub.19f3ab25ab15fd848b30.png",
-    "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
-    "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
-    "static/media/GettingStarted.md": "/static/media/GettingStarted.89e83eb0d73bfc0a72e9.md",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/logo-picu-transparent.svg": "/static/media/logo-picu-transparent.d66193e272dd53655bf24aa0e03fe5b6.svg",
-    "index.html": "/index.html",
-    "main.1d74bbb6.css.map": "/static/css/main.1d74bbb6.css.map",
-    "main.b3ead0a0.js.map": "/static/js/main.b3ead0a0.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/PicuSpace/static/css/main.f0749b78.css",
+    "main.js": "/PicuSpace/static/js/main.8af83974.js",
+    "static/js/376.307698b6.chunk.js": "/PicuSpace/static/js/376.307698b6.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/PicuSpace/static/js/787.1ed0c42c.chunk.js",
+    "static/media/personal-image-ai-drawing.png": "/PicuSpace/static/media/personal-image-ai-drawing.51b17a4076924f4ca52b.png",
+    "static/media/helvetica-neu.ttf": "/PicuSpace/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/logo_sub.png": "/PicuSpace/static/media/logo_sub.19f3ab25ab15fd848b30.png",
+    "static/media/LaBelleAurore.woff2": "/PicuSpace/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/CoolveticaRg-Regular.woff2": "/PicuSpace/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "static/media/GettingStarted.md": "/PicuSpace/static/media/GettingStarted.89e83eb0d73bfc0a72e9.md",
+    "static/media/logo.svg": "/PicuSpace/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo-picu-transparent.svg": "/PicuSpace/static/media/logo-picu-transparent.d66193e272dd53655bf24aa0e03fe5b6.svg",
+    "index.html": "/PicuSpace/index.html",
+    "main.f0749b78.css.map": "/PicuSpace/static/css/main.f0749b78.css.map",
+    "main.8af83974.js.map": "/PicuSpace/static/js/main.8af83974.js.map",
+    "787.1ed0c42c.chunk.js.map": "/PicuSpace/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d74bbb6.css",
-    "static/js/main.b3ead0a0.js"
+    "static/css/main.f0749b78.css",
+    "static/js/main.8af83974.js"
   ]
 }
