@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Blog from './Blog/Blog';
 
 function App() {
     console.log(`App version: ${process.env.REACT_APP_VERSION}`);
@@ -18,6 +19,7 @@ function App() {
                     Learn React
                 </a>
             </header>
+            <Blog />
         </div>
     );
 }
