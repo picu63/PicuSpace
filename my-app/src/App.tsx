@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+    console.log(`App version: ${process.env.REACT_APP_VERSION}`);
     return (
         <div className='App'>
             <header className='App-header'>
