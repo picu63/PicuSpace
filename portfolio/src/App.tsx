@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import styled from 'styled-components';
 import './App.css';
 import Blog from './Blog/Blog';
@@ -13,26 +12,19 @@ import Services from './components/Service/Services';
 function App() {
     console.log(`App version: ${process.env.REACT_APP_VERSION}`);
     return (
-        // <div className='App'>
-        <div>
-            <Container>
-                <Banner>
-                    <Header />
-                    <ProfComponent />
-                </Banner>
-                <Services />
-                <LightColor>
-                    <Projects />
-                </LightColor>
-                <Clients />
-                <LightColor>
-                    <Footer />
-                </LightColor>
-            </Container>
-            {/* <LightColor>
-                <Blog />
-            </LightColor> */}
-        </div>
+        <Container>
+            <Banner>
+                <Header />
+                <ProfComponent />
+            </Banner>
+            <Services />
+            <LightColor>
+                <Projects />
+            </LightColor>
+            <LightColor>
+                <Footer />
+            </LightColor>
+        </Container>
     );
 }
 
