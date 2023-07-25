@@ -3,14 +3,6 @@
         {
             "name": "Portfolio website",
             "path": "portfolio"
-        },
-        {
-            "name": "Portfolio typescript",
-            "path": "my-app"
-        },
-        {
-            "name": "Blog backend",
-            "path": "Blog"
         }
     ],
     "settings": {
