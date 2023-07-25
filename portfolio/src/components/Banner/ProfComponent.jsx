@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AiOutlineInstagram } from 'react-icons/ai';
-import { GiEarthAmerica } from 'react-icons/gi';
+import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
+import { GrInstagram } from 'react-icons/gr';
 import { Slide } from 'react-awesome-reveal';
 
 const ProfComponent = () => {
@@ -16,9 +16,12 @@ const ProfComponent = () => {
                     <h1 className='green'>Piotr Olearczyk</h1>
                     <h3>Software Developer</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Maiores, iusto. Adipisci in qui officia provident
-                        tenetur sequi, deserunt corporis quos?
+                        I'm a Developer, Husband, Dad and Dancer!! 🌱 I’m
+                        currently learning microservices architecture, devops
+                        and IoC 😊 👯 I’m looking to collaborate with other
+                        content creators 🥅 2023 Goals: Contribute more to Open
+                        Source projects ⚡ Hobbys: I'm professional hip-hop
+                        dancer, love to play basketball and listen to music.
                     </p>
                     <button>Let's talk</button>
                     <Social>
@@ -26,17 +29,17 @@ const ProfComponent = () => {
                         <div className='social-icons'>
                             <span>
                                 <a href='/'>
-                                    <AiOutlineInstagram />
-                                </a>
-                            </span>
-                            <span>
-                                <a href='/'>
-                                    <GiEarthAmerica />
+                                    <FaFacebookF />
                                 </a>
                             </span>
                             <span>
                                 <a href='/'>
                                     <FaLinkedinIn />
+                                </a>
+                            </span>
+                            <span>
+                                <a href='/'>
+                                    <GrInstagram />
                                 </a>
                             </span>
                         </div>
@@ -46,7 +49,7 @@ const ProfComponent = () => {
             <Slide direction='right'>
                 <Profile>
                     <img
-                        src='https://res.cloudinary.com/ghazni/image/upload/v1659082282/Yt-portfolio/Untitled-1_drcspz.png'
+                        src='images/piotr_olearczyk_personal_photo.png'
                         alt='profile'
                     />
                 </Profile>
