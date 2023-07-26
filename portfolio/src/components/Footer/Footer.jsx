@@ -7,6 +7,7 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from "react-icons/ai";
 import { BsFacebook, BsSlack } from "react-icons/bs";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Slide, Zoom, Fade } from "react-awesome-reveal";
+import HiddenPhoneNumber from "./HiddenPhoneNumber";
 
 const Footer = () => {
   const scrollUp = () => {
@@ -21,14 +22,6 @@ const Footer = () => {
         <Slide direction="left" delay={1}>
           <h1>Portfolio</h1>
         </Slide>
-        <div className="address">
-          <Slide direction="left">
-            <h1>Address:</h1>
-          </Slide>
-          <Slide direction="left">
-            <p>1030 Southwood Dr San Luis Obispo, California(CA), 93401</p>
-          </Slide>
-        </div>
         <div className="links">
           <Slide direction="left">
             <h1>Contact me directly:</h1>
@@ -38,7 +31,7 @@ const Footer = () => {
               <FiPhoneCall />
             </span>
             <Slide direction="left">
-              <a href="tel:+4733378901">+47 333 78 901</a>
+              <HiddenPhoneNumber phoneNumber="+48731467618" />
             </Slide>
           </div>
           <div>
@@ -48,7 +41,7 @@ const Footer = () => {
               </span>
             </Slide>
             <Slide>
-              <a href="mailto:miladamiri@gmail.com">miladamiri@gmail.com</a>
+              <a href="mailto:polearczyk63@gmail.com">polearczyk63@gmail.com</a>
             </Slide>
           </div>
         </div>
@@ -59,29 +52,22 @@ const Footer = () => {
           <div className="icons">
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://github.com/picu63" target="_blank">
                   <AiFillGithub />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://www.linkedin.com/in/piotrolearczyk" target="_blank">
                   <AiFillLinkedin />
                 </a>
               </span>
             </Zoom>
             <Zoom>
               <span>
-                <a href="/">
+                <a href="https://www.facebook.com/piotrpicu" target="_blank">
                   <BsFacebook />
-                </a>
-              </span>
-            </Zoom>
-            <Zoom>
-              <span>
-                <a href="/">
-                  <BsSlack />
                 </a>
               </span>
             </Zoom>
@@ -144,20 +130,6 @@ const Container = styled.div`
 `;
 const Profile = styled.div`
   flex: 1;
-  .address {
-    padding: 1rem 0;
-    h1 {
-      font-size: 1.2rem;
-    }
-
-    p {
-      width: 60%;
-      padding-top: 0.5rem;
-      @media (max-width: 650px) {
-        width: 100%;
-      }
-    }
-  }
 
   .links {
     h1 {
