@@ -4,6 +4,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { GrInstagram } from 'react-icons/gr';
 import { Slide } from 'react-awesome-reveal';
+import personalPhoto from './piotr_olearczyk_personal_photo.png'
 
 const ProfComponent = () => {
     return (
@@ -49,7 +50,7 @@ const ProfComponent = () => {
             <Slide direction='right'>
                 <Profile>
                     <img
-                        src='images/piotr_olearczyk_personal_photo.png'
+                        src={personalPhoto}
                         alt='profile'
                     />
                 </Profile>

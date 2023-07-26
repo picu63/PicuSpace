@@ -21,6 +21,7 @@ const Container = styled.div`
     text-align: center;
     span{
         font-size: 4rem;
+        height: 4rem;
     }
     
     h1{
