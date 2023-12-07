@@ -4,7 +4,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { GrInstagram } from 'react-icons/gr';
 import { Slide } from 'react-awesome-reveal';
-import personalPhoto from './piotr_olearczyk_personal_photo.png'
+import personalPhoto from './piotr_olearczyk_personal_photo.png';
 
 const ProfComponent = () => {
     return (
@@ -49,10 +49,7 @@ const ProfComponent = () => {
             </Slide>
             <Slide direction='right'>
                 <Profile>
-                    <img
-                        src={personalPhoto}
-                        alt='profile'
-                    />
+                    <img src={personalPhoto} alt='profile' />
                 </Profile>
             </Slide>
         </Container>
@@ -64,7 +61,7 @@ export default ProfComponent;
 const Container = styled.div`
     display: flex;
     gap: 2rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
     width: 80%;
     max-width: 1280px;
     margin: 0 auto;
@@ -77,8 +74,10 @@ const Container = styled.div`
         flex-direction: column;
     }
 `;
+
 const Texts = styled.div`
     flex: 1;
+    padding-top: 3em;
     h4 {
         padding: 1rem 0;
         font-weight: 500;
@@ -171,6 +170,8 @@ const Profile = styled.div`
 
         @media (max-width: 640px) {
             width: 100%;
+            height: 500px;
+            object-fit: contain;
         }
     }
 
