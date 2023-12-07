@@ -1,10 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 import './App.css';
-import Blog from './Blog/Blog';
 import Header from './components/Banner/Header';
 import ProfComponent from './components/Banner/ProfComponent';
-import Clients from './components/Clients/Clients';
 import Footer from './components/Footer/Footer';
 import Projects from './components/Projects/Projects';
 import Services from './components/Service/Services';
@@ -18,9 +15,6 @@ function App() {
                 <ProfComponent />
             </Banner>
             <Services />
-            <LightColor>
-                <Projects />
-            </LightColor>
             <LightColor>
                 <Footer />
             </LightColor>
