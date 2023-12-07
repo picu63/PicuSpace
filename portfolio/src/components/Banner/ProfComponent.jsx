@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { GrInstagram } from 'react-icons/gr';
+import { AiFillGithub } from 'react-icons/ai';
+
 import { Slide } from 'react-awesome-reveal';
 import personalPhoto from './piotr_olearczyk_personal_photo.png';
 
@@ -27,6 +29,14 @@ const ProfComponent = () => {
                     <Social>
                         <p>Check out my</p>
                         <div className='social-icons'>
+                            <span>
+                                <a
+                                    href='https://github.com/picu63'
+                                    target='_blank'
+                                >
+                                    <AiFillGithub />
+                                </a>
+                            </span>
                             <span>
                                 <a
                                     href='https://www.facebook.com/piotrpicu'
