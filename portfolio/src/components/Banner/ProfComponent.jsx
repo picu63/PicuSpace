@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { FaFacebookF } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -29,17 +28,26 @@ const ProfComponent = () => {
                         <p>Check out my</p>
                         <div className='social-icons'>
                             <span>
-                                <a href='/'>
+                                <a
+                                    href='https://www.facebook.com/piotrpicu'
+                                    target='_blank'
+                                >
                                     <FaFacebookF />
                                 </a>
                             </span>
                             <span>
-                                <a href='/'>
+                                <a
+                                    href='https://www.linkedin.com/in/piotrolearczyk'
+                                    target='_blank'
+                                >
                                     <FaLinkedinIn />
                                 </a>
                             </span>
                             <span>
-                                <a href='/'>
+                                <a
+                                    href='https://www.instagram.com/piotr_olearczyk'
+                                    target='_blank'
+                                >
                                     <GrInstagram />
                                 </a>
                             </span>
@@ -149,6 +157,7 @@ const Social = styled.div`
         a {
             color: #fff;
             position: absolute;
+            padding: 1em;
             top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
