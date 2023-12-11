@@ -5,27 +5,14 @@ import {
     LoadCanvasTemplate,
     validateCaptcha,
 } from 'react-simple-captcha';
+import { MyCaptchaClass } from './Captcha';
 
 const HiddenPhoneNumber = ({ phoneNumber }) => {
     const [showFullNumber, setShowFullNumber] = useState(false);
     const [showCaptcha, setShowCaptcha] = useState(false);
-    const [captchaValue, setCaptchaValue] = useState('');
 
     const handleShowClick = () => {
         setShowCaptcha(true);
-    };
-
-    const toggleShowFullNumber = () => {
-        if (validateCaptcha(captchaValue)) {
-            setShowFullNumber(!showFullNumber);
-            setShowCaptcha(false);
-        } else {
-            alert('Nieprawidłowa wartość captcha');
-        }
-    };
-
-    const handleCaptcha = (e) => {
-        setCaptchaValue(e.target.value);
     };
 
     return (
@@ -44,23 +31,17 @@ const HiddenPhoneNumber = ({ phoneNumber }) => {
             </a>
             {!showFullNumber && (
                 <>
-                    <span
-                        className='show-button green'
-                        onClick={handleShowClick}
-                    >
-                        show
-                    </span>
-                    {showCaptcha && (
-                        <>
-                            <LoadCanvasTemplate />
-                            <input type='text' onChange={handleCaptcha} />
-                            <span
-                                className='show-button green'
-                                onClick={toggleShowFullNumber}
-                            >
-                                Verify
-                            </span>
-                        </>
+                    {showCaptcha ? (
+                        <MyCaptchaClass
+                            onSuccessfull={() => setShowFullNumber(true)}
+                        />
+                    ) : (
+                        <span
+                            className='show-button green'
+                            onClick={handleShowClick}
+                        >
+                            show
+                        </span>
                     )}
                 </>
             )}
