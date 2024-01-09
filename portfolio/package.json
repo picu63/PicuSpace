@@ -12,6 +12,7 @@
         "@types/react": "^18.0.0",
         "@types/react-dom": "^18.0.0",
         "buffer": "^6.0.3",
+        "cross-env": "^7.0.3",
         "markdown-to-jsx": "^7.2.0",
         "react": "^18.2.0",
         "react-awesome-reveal": "^4.2.3",
@@ -28,6 +29,7 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
         "start": "react-scripts start",
+        "start-no-browser": "cross-env BROWSER=none react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"

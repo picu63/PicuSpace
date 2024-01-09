@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { MdAlternateEmail } from 'react-icons/md';
 import { CgProfile } from 'react-icons/cg';
@@ -6,7 +5,7 @@ import { HiOutlineMailOpen } from 'react-icons/hi';
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowUp } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
 import { FiMail, FiPhoneCall } from 'react-icons/fi';
-import { Slide, Zoom, Fade } from 'react-awesome-reveal';
+import { Slide, Fade } from 'react-awesome-reveal';
 import HiddenPhoneNumber from './HiddenPhoneNumber';
 
 const Footer = () => {
@@ -52,36 +51,27 @@ const Footer = () => {
                         <h1>Check my profiles</h1>
                     </Slide>
                     <div className='icons'>
-                        <Zoom>
-                            <span>
-                                <a
-                                    href='https://github.com/picu63'
-                                    target='_blank'
-                                >
-                                    <AiFillGithub />
-                                </a>
-                            </span>
-                        </Zoom>
-                        <Zoom>
-                            <span>
-                                <a
-                                    href='https://www.linkedin.com/in/piotrolearczyk'
-                                    target='_blank'
-                                >
-                                    <AiFillLinkedin />
-                                </a>
-                            </span>
-                        </Zoom>
-                        <Zoom>
-                            <span>
-                                <a
-                                    href='https://www.facebook.com/piotrpicu'
-                                    target='_blank'
-                                >
-                                    <BsFacebook />
-                                </a>
-                            </span>
-                        </Zoom>
+                        <span>
+                            <a href='https://github.com/picu63' target='_blank'>
+                                <AiFillGithub />
+                            </a>
+                        </span>
+                        <span>
+                            <a
+                                href='https://www.linkedin.com/in/piotrolearczyk'
+                                target='_blank'
+                            >
+                                <AiFillLinkedin />
+                            </a>
+                        </span>
+                        <span>
+                            <a
+                                href='https://www.facebook.com/piotrpicu'
+                                target='_blank'
+                            >
+                                <BsFacebook />
+                            </a>
+                        </span>
                     </div>
                 </div>
                 <Fade>
@@ -191,8 +181,9 @@ const Profile = styled.div`
                 }
 
                 a {
-                    margin-top: 0.2rem;
+                    margin-top: 0.1rem;
                     color: #fff;
+                    padding: 0.5rem;
                 }
             }
         }

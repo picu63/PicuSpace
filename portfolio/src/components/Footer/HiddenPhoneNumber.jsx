@@ -1,10 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
-import {
-    loadCaptchaEnginge,
-    LoadCanvasTemplate,
-    validateCaptcha,
-} from 'react-simple-captcha';
 import { MyCaptchaClass } from './Captcha';
 
 const HiddenPhoneNumber = ({ phoneNumber }) => {
@@ -20,16 +15,7 @@ const HiddenPhoneNumber = ({ phoneNumber }) => {
             <span style={{ display: showFullNumber ? 'none' : 'inline-block' }}>
                 {phoneNumber.slice(0, -8) + '********'}
             </span>
-            <a href='tel:+48731467618'>
-                <span
-                    style={{
-                        display: showFullNumber ? 'inline-block' : 'none',
-                    }}
-                >
-                    {phoneNumber}
-                </span>
-            </a>
-            {!showFullNumber && (
+            {!showFullNumber ? (
                 <>
                     {showCaptcha ? (
                         <MyCaptchaClass
@@ -44,6 +30,10 @@ const HiddenPhoneNumber = ({ phoneNumber }) => {
                         </span>
                     )}
                 </>
+            ) : (
+                <a href='tel:+48731467618'>
+                    <span>{phoneNumber}</span>
+                </a>
             )}
         </Container>
     );
