@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { Router, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { GiCandleFlame } from 'react-icons/gi';
+import Blog from '../../Blog/Blog';
 
 const Header = () => {
     const [bar, setBar] = useState(false);
@@ -14,22 +16,19 @@ const Header = () => {
             </Logo>
             <Nav bar={bar}>
                 <span>
-                    <a href='#home'>Home</a>
+                    <Link to='/'>Home</Link>
                 </span>
                 <span>
-                    <a href='#service'>Services</a>
+                    <Link to='/#services'>Services</Link>
                 </span>
                 <span>
-                    <a href='#project'>Projects</a>
+                    <Link to='/#projects'>Projects</Link>
                 </span>
                 <span>
-                    <a href='#client'>Testimonials</a>
+                    <Link to='/blog'>Blog</Link>
                 </span>
                 <span>
-                    <a href='#footer'>Portfolio</a>
-                </span>
-                <span>
-                    <a href='/blog'>Blog</a>
+                    <Link to='#footer'>ContactMe</Link>
                 </span>
             </Nav>
             <div onClick={() => setBar(!bar)} className='bars'>

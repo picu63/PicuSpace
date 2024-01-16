@@ -5,42 +5,43 @@ import { CgWebsite } from 'react-icons/cg';
 import styled from 'styled-components';
 import Card from './Card';
 import { Slide } from 'react-awesome-reveal';
+import ProfComponent from '../Banner/ProfComponent';
 
 const Services = () => {
     return (
-      <Container id="service">
-        <Slide direction="down">
-          <h4>
-            My <span className="green">services</span>
-          </h4>
-          <h1>What I Do</h1>
-        </Slide>
-        <Cards>
-          <Slide direction="left">
-            <Card
-              Icon={MdDesignServices}
-              title={"software development"}
-              disc={`Developing .NET applications using C# and ASP.NET`}
-            />
-          </Slide>
-          <Slide direction="up">
-            <Card
-              Icon={TiArrowSync}
-              title={"CI/CD"}
-              disc={`Lorem ipsum dolor sit amet consectetur 
+        <Container id='services'>
+            <Slide direction='down'>
+                <h4>
+                    My <span className='green'>services</span>
+                </h4>
+                <h1>What I Do</h1>
+            </Slide>
+            <Cards>
+                <Slide direction='left'>
+                    <Card
+                        Icon={MdDesignServices}
+                        title={'software development'}
+                        disc={`Developing .NET applications using C# and ASP.NET`}
+                    />
+                </Slide>
+                <Slide direction='up'>
+                    <Card
+                        Icon={TiArrowSync}
+                        title={'CI/CD'}
+                        disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-            />
-          </Slide>
-          <Slide direction="up">
-            <Card
-              Icon={CgWebsite}
-              title={"software architecture"}
-              disc={`Lorem ipsum dolor sit amet consectetur 
+                    />
+                </Slide>
+                <Slide direction='up'>
+                    <Card
+                        Icon={CgWebsite}
+                        title={'software architecture'}
+                        disc={`Lorem ipsum dolor sit amet consectetur 
                 adipisicing elit. Commodi et asperiores cum exercitationem officia rem amet minus magnam? Cum, voluptatem?`}
-            />
-          </Slide>
-        </Cards>
-      </Container>
+                    />
+                </Slide>
+            </Cards>
+        </Container>
     );
 };
 
