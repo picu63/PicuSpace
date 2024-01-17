@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { GiCandleFlame } from 'react-icons/gi';
-import Blog from '../../Blog/Blog';
 
 const Header = () => {
     const [bar, setBar] = useState(false);

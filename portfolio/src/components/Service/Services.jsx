@@ -5,7 +5,6 @@ import { CgWebsite } from 'react-icons/cg';
 import styled from 'styled-components';
 import Card from './Card';
 import { Slide } from 'react-awesome-reveal';
-import ProfComponent from '../Banner/ProfComponent';
 
 const Services = () => {
     return (

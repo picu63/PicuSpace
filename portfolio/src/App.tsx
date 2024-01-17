@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import './App.css';
 import Header from './components/Banner/Header';
 import Footer from './components/Footer/Footer';
-import Projects from './components/Projects/Projects';
-import Services from './components/Service/Services';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Blog from './Blog/Blog';
 import MainPageContent from './components/MainPageContent';
