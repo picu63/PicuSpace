@@ -4,7 +4,7 @@ import { Zoom } from 'react-awesome-reveal';
 
 const Projects = () => {
     return (
-        <Container id='project'>
+        <Container id='projects'>
             <Zoom>
                 <h1>
                     Recent <span className='green'>Projects</span>
