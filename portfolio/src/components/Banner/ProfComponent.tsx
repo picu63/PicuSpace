@@ -33,6 +33,7 @@ const ProfComponent = () => {
                                 <a
                                     href='https://github.com/picu63'
                                     target='_blank'
+                                    rel='noreferrer'
                                 >
                                     <AiFillGithub />
                                 </a>
@@ -41,6 +42,7 @@ const ProfComponent = () => {
                                 <a
                                     href='https://www.facebook.com/piotrpicu'
                                     target='_blank'
+                                    rel='noreferrer'
                                 >
                                     <FaFacebookF />
                                 </a>
@@ -49,6 +51,7 @@ const ProfComponent = () => {
                                 <a
                                     href='https://www.linkedin.com/in/piotrolearczyk'
                                     target='_blank'
+                                    rel='noreferrer'
                                 >
                                     <FaLinkedinIn />
                                 </a>
@@ -57,6 +60,7 @@ const ProfComponent = () => {
                                 <a
                                     href='https://www.instagram.com/piotr_olearczyk'
                                     target='_blank'
+                                    rel='noreferrer'
                                 >
                                     <GrInstagram />
                                 </a>

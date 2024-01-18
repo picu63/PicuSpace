@@ -52,7 +52,11 @@ const Footer = () => {
                     </Slide>
                     <div className='icons'>
                         <span>
-                            <a href='https://github.com/picu63' target='_blank'>
+                            <a
+                                href='https://github.com/picu63'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
                                 <AiFillGithub />
                             </a>
                         </span>
@@ -60,6 +64,7 @@ const Footer = () => {
                             <a
                                 href='https://www.linkedin.com/in/piotrolearczyk'
                                 target='_blank'
+                                rel='noreferrer'
                             >
                                 <AiFillLinkedin />
                             </a>
@@ -68,6 +73,7 @@ const Footer = () => {
                             <a
                                 href='https://www.facebook.com/piotrpicu'
                                 target='_blank'
+                                rel='noreferrer'
                             >
                                 <BsFacebook />
                             </a>
