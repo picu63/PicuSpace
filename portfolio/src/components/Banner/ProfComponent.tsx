@@ -19,11 +19,11 @@ const ProfComponent = () => {
                     <h3>Software Developer</h3>
                     <p>
                         I'm a Developer, Husband, Dad and Dancer!! 🌱 I’m
-                        currently learning microservices architecture, devops
-                        and IoC 😊 👯 I’m looking to collaborate with other
-                        content creators 🥅 2023 Goals: Contribute more to Open
-                        Source projects ⚡ Hobbys: I'm professional hip-hop
-                        dancer, love to play basketball and listen to music.
+                        currently learning react and python 😊 👯 I’m looking to
+                        collaborate with other content creators 🥅 2023 Goals:
+                        Contribute more to Open Source projects ⚡ Hobbys: I'm
+                        professional hip-hop dancer, love to play basketball and
+                        listen to music.
                     </p>
                     <button>Let's talk</button>
                     <Social>
