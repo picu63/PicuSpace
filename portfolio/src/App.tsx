@@ -7,7 +7,7 @@ import Blog from './components/Blog/Blog';
 import MainPageContent from './components/MainPageContent';
 
 function App() {
-    console.log(`App version: ${import.meta.env.REACT_APP_VERSION}`);
+    console.log(`App version: ${import.meta.env.VITE_APP_VERSION}`);
 
     return (
         <BrowserRouter>
