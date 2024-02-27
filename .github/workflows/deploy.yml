@@ -38,8 +38,10 @@ jobs:
                   cache-dependency-path: './portfolio/yarn.lock'
             - name: Install dependencies
               run: yarn install
+              working-directory: ./portfolio
             - name: Build
               run: npm run build
+              working-directory: ./portfolio
             - name: Setup Pages
               uses: actions/configure-pages@v3
             - name: Upload artifact
