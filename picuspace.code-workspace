@@ -3,6 +3,10 @@
         {
             "name": "Portfolio website",
             "path": "portfolio"
+        },
+        {
+            "name": "CI/CD",
+            "path": ".github/workflows"
         }
     ],
     "settings": {
