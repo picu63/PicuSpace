@@ -35,7 +35,7 @@ jobs:
               with:
                   node-version: 18
                   cache: 'npm'
-                  cache-dependency-path: './yarn.lock'
+                  cache-dependency-path: './portfolio/yarn.lock'
             - name: Install dependencies
               run: npm install
             - name: Build
