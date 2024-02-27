@@ -4,7 +4,7 @@ function Post() {
     return (
         <div className='Post'>
             <Markdown># First header from post</Markdown>
-            <Markdown>This is content</Markdown>
+            <Markdown>This is description</Markdown>
         </div>
     );
 }

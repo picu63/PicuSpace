@@ -3,11 +3,11 @@ import './App.css';
 import Header from './components/Banner/Header';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Blog from './Blog/Blog';
+import Blog from './components/Blog/Blog';
 import MainPageContent from './components/MainPageContent';
 
 function App() {
-    console.log(`App version: ${process.env.REACT_APP_VERSION}`);
+    console.log(`App version: ${import.meta.env.REACT_APP_VERSION}`);
 
     return (
         <BrowserRouter>
