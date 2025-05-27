@@ -3,8 +3,11 @@ import Projects from './Projects/Projects';
 import Services from './Service/Services';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import './Alert.css';
 
 const MainPageContent = () => {
+    const inDevelopment = true;
+
     useEffect(() => {
         window.onload = () => {
             const hash = window.location.hash;
@@ -23,7 +26,12 @@ const MainPageContent = () => {
 
     return (
         <div>
-            <h1>Hi sorry but this website is still in development.</h1>
+            {inDevelopment && (
+                <div className='alert alert-warning' role='alert'>
+                    This website is still in development. Some features may not
+                    work as expected.
+                </div>
+            )}
             <ProfComponent />
             <Services />
             <Projects />
