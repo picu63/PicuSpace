@@ -24,16 +24,27 @@ const ProfComponent = () => {
                         Contribute more to Open Source projects ⚡ Hobbys: I'm
                         professional hip-hop dancer, love to play basketball and
                         listen to music.
-                    </p>
-                    <button>Let's talk</button>
+                    </p>{' '}
+                    <button
+                        onClick={() => {
+                            document
+                                .getElementById('footer')
+                                ?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                    >
+                        Let's talk
+                    </button>
                     <Social>
                         <p>Check out my</p>
                         <div className='social-icons'>
+                            {' '}
                             <span>
                                 <a
                                     href='https://github.com/picu63'
                                     target='_blank'
-                                    rel='noreferrer'
+                                    rel='noreferrer noopener'
+                                    title='GitHub Profile'
+                                    aria-label='Visit my GitHub profile'
                                 >
                                     <AiFillGithub />
                                 </a>
@@ -42,7 +53,9 @@ const ProfComponent = () => {
                                 <a
                                     href='https://www.facebook.com/piotrpicu'
                                     target='_blank'
-                                    rel='noreferrer'
+                                    rel='noreferrer noopener'
+                                    title='Facebook Profile'
+                                    aria-label='Visit my Facebook profile'
                                 >
                                     <FaFacebookF />
                                 </a>
@@ -51,7 +64,9 @@ const ProfComponent = () => {
                                 <a
                                     href='https://www.linkedin.com/in/piotrolearczyk'
                                     target='_blank'
-                                    rel='noreferrer'
+                                    rel='noreferrer noopener'
+                                    title='LinkedIn Profile'
+                                    aria-label='Visit my LinkedIn profile'
                                 >
                                     <FaLinkedinIn />
                                 </a>
@@ -60,7 +75,9 @@ const ProfComponent = () => {
                                 <a
                                     href='https://www.instagram.com/piotr_olearczyk'
                                     target='_blank'
-                                    rel='noreferrer'
+                                    rel='noreferrer noopener'
+                                    title='Instagram Profile'
+                                    aria-label='Visit my Instagram profile'
                                 >
                                     <GrInstagram />
                                 </a>
@@ -118,7 +135,6 @@ const Texts = styled.div`
     p {
         font-weight: 300;
     }
-
     button {
         padding: 0.7rem 2rem;
         margin-top: 3rem;
@@ -128,8 +144,41 @@ const Texts = styled.div`
         color: #fff;
         font-weight: 500;
         filter: drop-shadow(0px 10px 10px #01be9551);
-        :hover {
-            filter: drop-shadow(0px 10px 10px #01be9570);
+        transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(30deg);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0px 10px 15px #01be9580);
+            box-shadow: 0 0 15px 5px rgba(1, 190, 150, 0.3);
+        }
+
+        &:hover::before {
+            opacity: 1;
+            animation: shine 1s forwards;
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%) rotate(30deg);
+            }
+            100% {
+                transform: translateX(100%) rotate(30deg);
+            }
         }
     }
 `;
@@ -163,18 +212,26 @@ const Social = styled.div`
             background-color: #01be96;
             position: relative;
             transition: transform 400ms ease-in-out;
-            :hover {
-                transform: rotate(360deg);
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span:hover {
+            transform: rotate(360deg);
+        }
+
+        span:hover svg {
+            transform: rotate(360deg);
         }
 
         a {
             color: #fff;
-            position: absolute;
-            padding: 1em;
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
         }
     }
 `;
